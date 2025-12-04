@@ -60,7 +60,7 @@ def optimize_vrp(depot, customers, vehicle_capacity, num_vehicles):
             for idx in r:
                 total_distance += calculate_distance(previous, customers[idx])
                 previous = customers[idx]
-            total_distance += calculate_distance(previous, depot)
+            # total_distance += calculate_distance(previous, depot)
 
         if total_distance < best_distance:
             best_distance = total_distance
@@ -74,7 +74,6 @@ def optimize_vrp(depot, customers, vehicle_capacity, num_vehicles):
             converted_route.append(customers[i])
         result.append(converted_route)
 
-    result.sort(key=lambda r: min(p[0] for p in r))
 
     return result
 

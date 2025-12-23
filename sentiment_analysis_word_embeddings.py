@@ -47,13 +47,13 @@ def train_sentiment_analysis_model(texts, labels, max_words, embedding_dim, num_
 texts = ["Superbly adapted to the screen and extremely faithful to Mary Webb's period novel, this film is a true masterpiece.",
         "A friend of mine showed me this film yesterday, and I was really amazed that someone could make a movie this terrible!",
         "How bad can you make a film.",
-        "I saw this movie on PBS the first time. Then I bought the video and watched it countless times.",
+        "Amazing. I saw this movie on PBS the first time. Then I bought the video and watched it countless times.",
         "Don't see this movie! It's... repulsive!"
 ]
 labels = [1, 0, 0, 1, 0]
 
 # Hyperparameters
-max_words = 5000
+max_words = 15000
 embedding_dim = 32
 num_epochs = 5
 batch_size = 2
@@ -78,7 +78,7 @@ print("Model is loaded!")
 # Example new text reviews
 new_texts = [
             "On rare occasions a film comes along that has the power to expand the mind, warm the heart and touch the very soul.",
-            "This movie can best be described as a very long episode of a very bad sitcom.",
+            "This movie can be described as a very long episode of a very bad sitcom.",
             "I gave this movie 2 instead of 1 just just because I am a polite person.",
             "My ten-year old liked it. For me it was hard to get through it.",
             "This film is brilliant it has cute little dolphins in it and its a great storyline."

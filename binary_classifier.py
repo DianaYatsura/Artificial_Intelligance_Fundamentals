@@ -111,7 +111,9 @@ def evaluate_classifier(classifier, X_val, y_val):
     return metrics
 
 # Load the CyberBullyingTweets dataset
-file_path = r'https://drive.google.com/uc?export=download&id=1m5-sdOdzIuSPzMODfBxdloL2GhqGSuHP'
+#file_path = r'https://drive.google.com/uc?export=download&id=1m5-sdOdzIuSPzMODfBxdloL2GhqGSuHP'
+file_path = 'https://drive.google.com/uc?id=1m5-sdOdzIuSPzMODfBxdloL2GhqGSuHP'
+
 target_column = 'CB_Label'  # Replace with the actual label column name
 data = load_dataset(file_path)
 
